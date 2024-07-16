@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Please fill out this survey</p>
+    <form id="survey-form">
+      <label id="name-label">Please enter your name<br><input type="text" placeholder="Name..." id="name" required></label><br>
+      <label id="email-label">Please enter your email<br><input placeholder="email..." type="email" id="email" required></label><br>
+      <label id="number-label">Please enter you age (optional)<br><input placeholder="age..." id="number" min="13" max="120" type="number"></label><br>
+      <label class="dropdown">How did you find out about this survey?<br> 
+        <select id="dropdown">
+          <option value="">Please select an option</option>
+          <option value="a friend">A friend</option>
+          <option value="an advertisment">An advertisment</option>
+        </select>
+      </label>
+      <br>
+      <label id="radio">How do you feel about this survey?<br> 
+        <label>Good<input checked name="radio" Value="good" type="radio"></label>
+        <label>alright<input name="radio" Value="alright" type="radio"></label>
+        <label>bad<input name="radio" Value="bad" type="radio"></label><br>
+      <label id="checkbox">What do you think needs improving in this survey?<br>
+        <input value="design" type="checkbox">Design
+        <input value="functionality" type="checkbox">Functionality
+        <input value="readability" type="checkbox">Readability
+      </label><br>
+      <label id="textarea">Please leave any feedback here: <br>
+        <textarea></textarea>
+      </label><br>
+      <button id=submit>Submit</button>
+    </form>
+  </body>
+</html>
